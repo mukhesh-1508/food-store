@@ -1,0 +1,134 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    freshmealshop
+  </title>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  
+  
+    <div class="site-content-wrapper">
+        <div class="nav-trigger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-bar-chart">
+                <line x1="12" y1="20" x2="12" y2="10" />
+                <line x1="18" y1="20" x2="18" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="16" /></svg>
+        </div>
+        <div class="site-content">
+
+          <img src="./icons/logo.svg" alt="">  
+
+            <header class="hero flex items-center">
+                <div class="container">
+                    <div class="welcome flex items-center">
+                    </div>
+                    <div class="hero-image">
+                    </div>
+                </div>
+            </header>
+  <section class="d1">
+    <div class="container">
+      <div class="card left">
+        <div class="face card-front">
+          <div class="signin-form">
+            <form action="javascript:void(0);">
+              <h2>Sign in</h2>
+
+              <div class="social-container">
+                <a href="javascript:void(0);" class="social" id="fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="javascript:void(0);" class="social" id="gp"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="javascript:void(0);" class="social" id="lin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+
+              <span class="formspan">or use your registered account</span>
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <span class="olspan forgot"
+                ><a href="javascript:void(0);">Forgot your password?</a></span
+              >
+              <button class="formbtn"><a href="index.html">Sign in</a></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="face card-back">
+          <div class="panel">
+            <h2>Welcome back!</h2>
+            <span class="panelspan"
+              >To keep connected with us!</span
+            >
+            <button class="panelbtn signInBtn">Sign In</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card right">
+        <div class="face card-front">
+          <div class="panel">
+            <h2>"A taste you’ll remember"</h2>
+            <span class="panelspan"
+              >  Enter your personal details and start journey with us</span
+            >
+            <button class="panelbtn signUpBtn">Sign Up</button>
+          </div>
+        </div>
+
+        <div class="face card-back">
+          <div class="signup-form">
+            <form action="javascript:void(0);">
+              <h2>Create Account</h2>
+
+              <div class="social-container">
+                <a href="javascript:void(0);" class="social" id="fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="javascript:void(0);" class="social" id="gp"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="javascript:void(0);" class="social" id="lin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+
+              <span class="formspan">or use your email for registration</span>
+              <input type="email" placeholder="Email" />
+              <input type="name" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <button class="formbtn">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>f
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    var left = document.querySelector(".left");
+    var right = document.querySelector(".right");
+    var signUp = document.querySelector(".signUpBtn");
+    var signIn = document.querySelector(".signInBtn");
+    signUp.addEventListener("click", function () {
+      left.classList.add("flip");
+      right.classList.add("flip");
+    });
+    signIn.addEventListener("click", function () {
+      left.classList.remove("flip");
+      right.classList.remove("flip");
+    });
+  </script>
+</body>
